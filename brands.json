@@ -1,0 +1,118 @@
+[
+  {
+    "slug": "solevault-sneakers",
+    "name": "Sole Vault",
+    "tagline": "Rare drops. Daily heat.",
+    "niche": "Sneaker store",
+    "description": "A curated sneaker vault for limited drops, classics, and street essentials.",
+    "fontDisplay": "Archivo Black",
+    "fontBody": "IBM Plex Sans",
+    "colors": {
+      "bg": "#f5f5f5",
+      "fg": "#0a0a0a",
+      "muted": "#5a5a5a",
+      "primary": "#0a0a0a",
+      "accent": "#ff2d55",
+      "surface": "#ffffff",
+      "border": "#e5e5e5",
+      "hero": "#111111"
+    },
+    "heroImageId": "photo-1552346154-21d32810aba3",
+    "categories": [
+      "Lifestyle",
+      "Basketball",
+      "Running",
+      "Collabs",
+      "Accessories"
+    ],
+    "cta": "Enter the vault",
+    "checkoutNote": "Authenticated pairs. Ships in 1\u20132 business days.",
+    "isBooking": false,
+    "products": [
+      {
+        "name": "Vault Runner 01",
+        "category": "Running",
+        "price": 160,
+        "unsplashId": "photo-1542291026-7eec264c27ff",
+        "description": "Mesh upper, gum sole, city miles."
+      },
+      {
+        "name": "Court King Mid",
+        "category": "Basketball",
+        "price": 145,
+        "unsplashId": "photo-1606107557195-0e29a4b5b4aa",
+        "description": "Heritage mid with modern cushioning."
+      },
+      {
+        "name": "Shadow Low",
+        "category": "Lifestyle",
+        "price": 120,
+        "unsplashId": "photo-1595950653106-6c9ebd614d3a",
+        "description": "All-black low with tonal stitching."
+      },
+      {
+        "name": "Neon Pulse Dunk",
+        "category": "Collabs",
+        "price": 210,
+        "unsplashId": "photo-1600185365483-26d7a4cc7519",
+        "description": "Limited neon hit on classic silhouette."
+      },
+      {
+        "name": "Cream Pack High",
+        "category": "Lifestyle",
+        "price": 175,
+        "unsplashId": "photo-1460353581641-37baddab0fa2",
+        "description": "Off-white leather, aged midsole."
+      },
+      {
+        "name": "Track Socks 3-Pack",
+        "category": "Accessories",
+        "price": 28,
+        "unsplashId": "photo-1586350977771-b3b0abd50c82",
+        "description": "Cushioned crew socks."
+      },
+      {
+        "name": "Retro Court OG",
+        "category": "Basketball",
+        "price": 135,
+        "unsplashId": "photo-1608231387042-66d1773070a1",
+        "description": "1980s court DNA, fresh tooling."
+      },
+      {
+        "name": "Metro Slip",
+        "category": "Lifestyle",
+        "price": 98,
+        "unsplashId": "photo-1525966222134-fcfa99b8ae77",
+        "description": "Easy slip-on for weekend miles."
+      },
+      {
+        "name": "Laces Archive Kit",
+        "category": "Accessories",
+        "price": 22,
+        "unsplashId": "photo-1515955656352-a1fa3ffcd111",
+        "description": "Flat + round laces in vault colors."
+      },
+      {
+        "name": "Aero Boost X",
+        "category": "Running",
+        "price": 185,
+        "unsplashId": "photo-1539185441755-769473a23570",
+        "description": "Energy-return foam for long runs."
+      },
+      {
+        "name": "Graffiti Pack",
+        "category": "Collabs",
+        "price": 240,
+        "unsplashId": "photo-1551107696-a4b0c5a0d9a2",
+        "description": "Artist collab, numbered edition."
+      },
+      {
+        "name": "Vault Cap",
+        "category": "Accessories",
+        "price": 36,
+        "unsplashId": "photo-1588850561407-ed78c282e89b",
+        "description": "Structured cap with metallic mark."
+      }
+    ]
+  }
+]
