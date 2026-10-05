@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --vault-bg: #0a0a0a;
+  --vault-fg: #f5f5f5;
+  --vault-pink: #ff4ecd;
+  --vault-cyan: #40f3ff;
+}
+html, body { background: var(--vault-bg); color: var(--vault-fg); }
+body {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(255,78,205,.18), transparent 35%),
+    radial-gradient(circle at 90% 10%, rgba(64,243,255,.15), transparent 30%),
+    linear-gradient(180deg, #0a0a0a, #121018 60%, #0a0a0a);
+}
+.font-display { font-family: "Archivo Black", Impact, sans-serif; }
+.chrome-text {
+  background: linear-gradient(180deg, #fff 0%, #c0c0c0 40%, #fff 50%, #8a8a8a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 12px rgba(64,243,255,.35));
+}
+.sticker {
+  border: 3px solid #fff;
+  background: #ff4ecd;
+  color: #0a0a0a;
+  font-family: "Archivo Black", Impact, sans-serif;
+  text-transform: uppercase;
+  transform: rotate(-6deg);
+  box-shadow: 4px 4px 0 #40f3ff;
+}
+.btn-vault {
+  background: linear-gradient(90deg, #ff4ecd, #40f3ff);
+  color: #0a0a0a;
+  font-weight: 800;
+  padding: .85rem 1.4rem;
+  text-transform: uppercase;
+  border: 3px solid #fff;
+  box-shadow: 6px 6px 0 #ff4ecd;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.btn-vault:hover { transform: scale(1.04); }
+.ticket-notch { height: 12px; background: repeating-linear-gradient(90deg, #ff4ecd 0 12px, #40f3ff 12px 24px); }
+.y2k-grid {
+  background-image: linear-gradient(rgba(64,243,255,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,78,205,.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.heat-bar {
+  height: 4px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+.heat-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff4ecd, #40f3ff);
+}
+.hero-film { position: absolute; inset: 0; overflow: hidden; z-index: 0; pointer-events: none; }
+.hero-film img, .hero-film video, .hero-film .hero-film-img {
+  width: 100%; height: 100%; object-fit: cover;
+  transform: scale(1.08);
+  animation: vaultDrift 26s ease-in-out infinite alternate;
+}
+@keyframes vaultDrift {
+  from { transform: scale(1.05) translate3d(0, 0, 0); }
+  to { transform: scale(1.14) translate3d(-1.4%, 0.5%, 0); }
+}
+@keyframes stamp { 0% { transform: scale(1.4) rotate(-12deg); opacity: 0; } 100% { transform: scale(1) rotate(-6deg); opacity: 1; } }
+.animate-stamp { animation: stamp .45s cubic-bezier(.2,1.4,.4,1) both; }
+@keyframes rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+.animate-rise { animation: rise 0.7s ease both; }
+.animate-rise-d1 { animation: rise 0.8s ease 0.1s both; }
+.soft-scale { transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1); }
+.soft-scale:hover { transform: scale(1.03); }
+@media (prefers-reduced-motion: reduce) {
+  .hero-film img, .hero-film video, .hero-film .hero-film-img { animation: none; transform: none; }
+  .animate-stamp, .animate-rise, .animate-rise-d1 { animation: none; }
+  .btn-vault:hover, .soft-scale:hover { transform: none; }
+}
